@@ -1,0 +1,47 @@
+Sure, here's a step-by-step guide to build your solution:
+
+Create an Azure account: If you don't already have an Azure account, go to https://portal.azure.com and sign up for a free account.
+
+Create an Azure IoT Hub:
+a. In the Azure portal, click on the "+ Create a resource" button.
+b. Search for "IoT Hub" and select the "IoT Hub" from the results.
+c. Click the "Create" button.
+d. Fill out the required information for your IoT Hub, such as the subscription, resource group, and IoT Hub name.
+e. Select the pricing tier that meets your needs.
+f. Click on the "Review + Create" button, then click on the "Create" button.
+g. Wait for the IoT Hub to be created, which may take several minutes.
+
+Create a device simulator:
+a. In the Azure portal, click on the "Create a resource" button.
+b. Search for "IoT Hub Device Simulator" and select it from the results.
+c. Click the "Create" button.
+d. Fill out the required information for your simulator, such as the subscription, resource group, and IoT Hub.
+e. Click on the "Review + Create" button, then click on the "Create" button.
+f. Wait for the simulator to be created, which may take several minutes.
+g. Once the simulator is created, go to the IoT Hub Device Simulator and start sending messages to the IoT Hub.
+
+Store messages in Blob Storage:
+a. In the Azure portal, click on the "Create a resource" button.
+b. Search for "Blob Storage" and select it from the results.
+c. Click the "Create" button.
+d. Fill out the required information for your Blob Storage, such as the subscription, resource group, and storage account name.
+e. Select the pricing tier that meets your needs.
+f. Click on the "Review + Create" button, then click on the "Create" button.
+g. Wait for the Blob Storage to be created, which may take several minutes.
+h. Once the Blob Storage is created, go to the Blob Storage and create a container to store the messages from the IoT Hub.
+
+Store data in SQL Server:
+a. In the Azure portal, click on the "Create a resource" button.
+b. Search for "SQL Database" and select it from the results.
+c. Click the "Create" button.
+d. Fill out the required information for your SQL Database, such as the subscription, resource group, and database name.
+e. Select the pricing tier that meets your needs.
+f. Click on the "Review + Create" button, then click on the "Create" button.
+g. Wait for the SQL Database to be created, which may take several minutes.
+h. Once the SQL Database is created, go to the SQL Database and create tables to store the data from the Blob Storage.
+
+Fetch data in .NET API:
+a. Create a new .NET Core project in Visual Studio.
+b. Install the Entity Framework Core NuGet package.
+c. Create a model class for the data you want to fetch from the SQL Database.
+d. Create a DbContext class to interact with
