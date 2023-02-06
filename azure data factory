@@ -1,0 +1,7 @@
+@concat('AqmsDeviceHub/01/',
+substring(getPastTime(1,'Minute'),0,4),'/',
+substring(getPastTime(1,'Minute'),5,2),'/',
+substring(getPastTime(1,'Minute'),8,2),'/',
+substring(getPastTime(1,'Minute'),11,2),'/'
+)
+@concat(substring(getPastTime(1,'Minute'),14,2),'.json')
